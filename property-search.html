@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Property Search</title>
+    </head>
+<!--
+3. Make a file named property-search.html √
+- This will be a form for a property search.
+- Add all the appropriate inputs you would need to conduct a property search:
+- Property type √, square footage √, min_price, max_price, zipcode, # of bedrooms, # of bathrooms, etc...
+- The submit button's text should say "Search now"
+-->
+    <body>
+        <form method="get" action="http://request-inspector.glitch.me">
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search">
+            <br>
+            <label for="PropT">Property Type:</label>
+            <input type="PropT" id="PropT" name="PropT">
+            <br>
+            <label for="SquareFoot">Square Footage:</label>
+            <input type="SquareFoot" id="SquareFoot" name="SquareFoot">
+            <br>
+            <label for="min_price">Minimum Price</label>
+            <input type="min_price" id="min_price" name="min_price">
+            <br>
+            <label for="max_price">Maximum Price:</label>
+            <input type="max_price" id="max_price" name="max_price">
+            <br>
+            <label for="zipcode">Zipcode:</label>
+            <input type="zipcode" id="zipcode" name="zipcode">
+            <br>
+            <label for="bedrooms">Number of Bedrooms:</label>
+            <input type="bedrooms" id="bedrooms" name="bedrooms">
+            <br>
+            <label for="bathrooms">Number of Bathrooms:</label>
+            <input type="bathrooms" id="bathrooms" name="bathrooms">
+            <br>
+            <button>Search Now</button>
+        </form>
+    </body>
+</html>
