@@ -3,7 +3,6 @@ html{
 }
 
 #backgroundimg {
-
     content: "";
     background-image: url("../images/groupdance.jpeg");
     opacity: 0.25;
