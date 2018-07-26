@@ -1,5 +1,22 @@
+#backgroundimg {
+
+    content: "";
+    background-image: url("../images/groupdance.jpeg");
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: lemonchiffon;
+
+}
+
 
 .fancy-header {
     color: purple; /* single line comment */
     text-decoration: underline;
+
 }
+
