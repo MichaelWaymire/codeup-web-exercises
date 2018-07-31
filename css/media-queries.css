@@ -1,6 +1,18 @@
 
 
+body {
+    font-family: 'Cabin', sans-serif; font-size: 22px;
+    
+}
+
+.header-img {
+    width: 100%;
+}
 @media screen and (max-width:400px) {
+    body{
+        max-width: 100%;
+    }
+
     .hidden-on-desktop {
         border: 1px solid;
         border-color: #848487;
@@ -9,48 +21,99 @@
         padding: 1em;
 
     }
-    div.alert-info>a:link {
-        color: #000;
-        text-decoration: none;
-    }
-
-    h1 {
-        text-align: center;
-    }
 
     .nav-links {
         list-style-type: none;
         padding: 0;
     }
+
+    .main{
+        font-size: .75em;
+    }
+
+    section.main>h2{
+        font-size: 2em;
+        font-weight: bold;
+        margin: 1em 0 .13em 0;
+    }
+
+    section.main>p{
+        margin: 1em 0 1em 0;
+    }
+
+    section.sub-section>h2{
+        font-size: 1em;
+
+    }
+
+    section.sub-section>p{
+
+        font-size: .75em;
+
+    }
+
+    div.alert-info>a:link {
+        color: #000;
+        text-decoration: none;
+    }
+
+    footer>p{
+        float: left;
+        margin: 10em 0 0 0;
+        font-size: .5em;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
     li {
+        margin: .75em 0 0 0;
         background: #cccccc;
         text-align: center;
-        margin: .75em;
         padding: 1em;
     }
 
-    img{
-        width: 21.1875em;
-        height: 14em;
+    div.header-img>img{
+        height: 224px;
+        width: 339px;
+    }
+    .social_media{
+        margin: 4.25em .50em 0 0;
+        float: right;
+        width: 25px;
+        height: 25px;
+
     }
 }
 
-@media screen and (min-width:401px){
+@media screen and (min-width:750px){
     .hidden-on-desktop {
         display: none;
     }
-    h1 {
 
-        float: left;
+    .nav-links{
+    margin-right: 15.75em;
     }
-    
+
+    h1 {
+        float: left;
+        margin: 0;
+        
+    }
+
     li{
+        font-size: .75em;
         float: right;
         list-style-type: none;
         padding: 0 1em;
-        margin: 1.3125em 0;
+        margin: 1.3125em 0 3em 0;
     }
+    img {
 
+        width: 890px;
+        height: 385px;
+    }
 
 }
 
