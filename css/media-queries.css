@@ -1,6 +1,6 @@
+* {transition: all 1s;}
 
-
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
     .row.alert-info{
         width: 100%;
     }
@@ -85,9 +85,10 @@
 }
 
 
-@media screen and (min-width:600px){
-    .row.alert-info{
-        width: 100%;
+
+@media screen and (min-width:450px){
+    body {
+        width: 910px;
     }
 
     .row:after{
@@ -95,17 +96,64 @@
         display: table;
         clear: both;
     }
-}
-
-@media screen and (min-width:900px){
-    .row.alert-info{
+    .row.company{
         width: 100%;
     }
+    .column.hidden-on-desktop{
+        display: none;
+    }
+    .column.company{
+        float: left;
+        font-weight: bold;
+        margin: 1em 0 1em 0;
+    }
+    .column.nav-links{
+        float: right;
+        list-style-type: none;
 
-    .row:after{
-        content: "";
-        display: table;
-        clear: both;
+    }
+    .column.li{
+        /*background-color: yellow;*/
+        display: inline-block;
+        margin: 1.5em 1em 0 0;
+    }
+    .column.header-img{
+        width: 100%;
+        margin: 0 0 2em 0;
+        /*Use background-color to help see how the boxes are lineing up*/
+        /*background-color: green; */
+    }
+    #row.main>h2{
+        font-weight: bold;
+    }
+    .column.main{
+        float: left;
+        width: 60%;
+        margin: 0 .5em 0 0;
+
+    }
+    section.sub-section>h2{
+        font-size: 1.25em;
+        margin: 1.1em 0 1em 0;
+    }
+    .column.sub-section{
+        font-style: italic;
+        float: right;
+        width: 35%;
+        margin: 0 1.5em 0 0;
+    }
+    footer>p{
+        float: left;
+        font-size: .75em;
+        margin: 40em 32em 0 0;
+        padding: 0;
+    }
+    .column.social_media{
+        float: right;
+        height: 50px;
+        width: 50px;
+
+        margin: 25em .25em 0 0;
     }
 }
 
