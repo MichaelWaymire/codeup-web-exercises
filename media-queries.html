@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <title>Media Queries</title>
+</head>
+<body>
 
-        <!-- This meta allows the page to be responsive -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/media-queries.css">
-        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-        <title>Media Queries</title>
+<div class="column alert-info hidden-on-desktop">
+    <a href="#main">Skip to main content</a>
+</div>
 
-    </head>
-    <body>
-        <div class="column alert-info hidden-on-desktop">
-            <a href="#main">Skip to main content</a>
-        </div>
-        <h1 id="row" class="company">Company</h1>
-        <nav>
-            <ul class="column nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="column header-img">
-            <img src="images/stock_image.jpg" alt="">
-        </div>
-        <section id="column main" class="column main">
-            <h2>Main Section</h2>
-            <p>Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at animi commodi, iusto harum, non. Accusantium sequi consectetur deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae amet maiores sapiente in?</p>
-        </section>
-        <section class="column sub-section">
-            <h2>Sub-section</h2>
-            <p>Amet optio quidem voluptatum neque esse at saepe, reiciendis quaerat architecto unde minima aspernatur harum cum totam non amet soluta. Ea quae odio harum magni ab vitae tenetur. Itaque numquam!</p>
-        </section>
-        <footer>
-            <p>(c) 2017 All rights reserved</p>
-        <div id="column social-media-links">
-            <a href="http://www.twitter.com" target="_blank">
+<h1 class="column company">Company</h1>
+
+<nav>
+    <ul class="column nav-links">
+        <li class="column li"><a href="#">Home</a></li>
+        <li class="column li"><a href="#">About</a></li>
+        <li class="column li"><a href="#">Work</a></li>
+        <li class="column li"><a href="#">Contact</a></li>
+    </ul>
+
+</nav>
+
+<div class="column header-img">
+    <img src="images/stock_image.jpg" alt="">
+</div>
+
+<section id="main" class="main">
+    <h2>Main Section</h2>
+    <p>Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at animi commodi, iusto harum, non. Accusantium sequi consectetur deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae amet maiores sapiente in?</p>
+</section>
+
+<section class="sub-section">
+    <h2>Sub-section</h2>
+    <p>Amet optio quidem voluptatum neque esse at saepe, reiciendis quaerat architecto unde minima aspernatur harum cum totam non amet soluta. Ea quae odio harum magni ab vitae tenetur. Itaque numquam!</p>
+</section>
+
+<footer>
+    <p>(c) 2017 All rights reserved</p>
+    <div id="social-media-links">
+        <a href="http://www.twitter.com" target="_blank">
             <img class="column social_media" src="images/twitter_logo.png" alt="twitter logo"></a>
-            <a href="http://www.instagram.com" target="_blank">
+        <a href="http://www.instagram.com" target="_blank">
             <img class="column social_media" src="images/ig_logo.png" alt="Instagram Logo"></a>
-            <a href="http://www.facebook.com" target="_blank">
+        <a href="http://www.facebook.com" target="_blank">
             <img class="column social_media" src="images/facebook_logo.png" alt="Facebook Logo"></a>
-        </div>
-        </footer>
-    </body>
+    </div>
+
+</footer>
+</body>
 </html>
