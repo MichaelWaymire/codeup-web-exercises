@@ -1,38 +1,20 @@
-
-
-
-@media (max-width: 576px){
-    .jumbotron.jumbotron-fluid {
-        width: 100%;
-        display: none;
-    }
-
-    .display-4 {
-        float: left;
-        margin: 2em 0 0 0;
-        position: absolute;
-        text-align: center;
-        background-color: #d8d8d8;
-        opacity: 0.6;
-        width: 100%;
-    }
+.jumbotron {
+    background-image: url("../images/pizza.png");
+    margin: auto;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-@media (min-width: 576px) {
-    .jumbotron {
-        width: 100%;
+.display-4 {
 
-    }
-    .pizza{
-        width: 100%;
-    }
-    .display-4 {
-        float: left;
-        margin: 2em 0 0 0;
-        position: absolute;
-        text-align: center;
-        background-color: #d8d8d8;
-        opacity: 0.6;
-        width: 100%;
-    }
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    background-color: #d8d8d8;
+    opacity: 0.6;
+
 }
+
+/* .container-fluid{
+padding: 0; */
