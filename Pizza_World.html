@@ -6,6 +6,7 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1">
     <title>Pizza World Part Duex</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/order-pizza.css">
 </head>
 <body>
@@ -34,7 +35,8 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search by Zip" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 float-right" type="submit"><i class="fas fa-cog fa-spin"></i>Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
         </form>
     </div>
 </nav>
@@ -141,7 +143,7 @@
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <!--Card Starts Here -->
         <div class="card">
-            <h5 class="card-header">Cheese</h5>
+            <h5 class="card-header ">Choose Cheese and Sauce</h5>
             <div class="card-body">
                 <h6 class="card-title">How Much?</h6>
                 <!--Selector Starts here-->
@@ -177,7 +179,7 @@
                 <br>
                 <div class="text-right">
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary">Size & Crust</button>
+                        <button type="button" class="btn btn-secondary"><i class="fas fa-angle-left"></i>&nbsp;Size & Crust</button>
                         <button type="button" class="btn btn-secondary">Toppings</button>
                     </div>
                 </div>
@@ -253,7 +255,10 @@
                     </label>
                 </div>
                 <br>
-                <div class="text-right"> <a href="#" class="btn btn-primary">Check Out</a> </div>
+                <div class="text-right">
+                <button type="button" class="btn btn-secondary"><i class="fas fa-angle-left"></i>&nbsp;Back</button>
+                <button type="button" class="btn btn-secondary">Check Out</button>
+                </div>
             </div>
         </div>
         <!-- Put inside of a card
