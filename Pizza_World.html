@@ -34,9 +34,11 @@
 
         </ul>
         <form class="form-inline my-2 my-lg-0">
+            <div class="zip_search_field">
             <input class="form-control mr-sm-2" type="search" placeholder="Search by Zip" aria-label="Search">
-            <button class="btn btn-outline-success my-2 float-right" type="submit"><i class="fas fa-cog fa-spin"></i>Search</button>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-cog fa-spin"></i>&nbsp;Search</button>
+            </div>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-user"></i>&nbsp;Sign In</button>
         </form>
     </div>
 </nav>
@@ -91,7 +93,7 @@
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <!-- Card Start -->
         <div class="card">
-            <h5 class="card-header">Hand Tossed</h5>
+            <h5 class="card-header bg-info text-white">Hand Tossed</h5>
             <div class="card-body">
                 <h6 class="card-title">Garlic seasoned crust with a rich, buttery taste.</h6>
                 <!-- Forms Start Here -->
@@ -113,7 +115,7 @@
         </div>
         <!-- Card 2 -->
         <div class="card">
-            <h5 class="card-header">Crispy Thin</h5>
+            <h5 class="card-header bg-info text-white">Crispy Thin</h5>
             <div class="card-body">
                 <h6 class="card-title">Thin Enough for optimim crispy to crunchy ration</h6>
                 <!-- Forms Start Here -->
@@ -133,7 +135,7 @@
 
                 <br>
                 <div class="text-right">
-                    <a href="#" class="btn btn-primary">Sauce & Cheese</a>
+                    <a href="#" class="btn btn-primary">Sauce & Cheese&nbsp;<i class="fas fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
@@ -143,7 +145,7 @@
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <!--Card Starts Here -->
         <div class="card">
-            <h5 class="card-header ">Choose Cheese and Sauce</h5>
+            <h5 class="card-header bg-info text-white">Choose Cheese and Sauce</h5>
             <div class="card-body">
                 <h6 class="card-title">How Much?</h6>
                 <!--Selector Starts here-->
@@ -156,7 +158,7 @@
         </div>
         <!--Card Starts Here -->
         <div class="card">
-            <h5 class="card-header">Sauce</h5>
+            <h5 class="card-header bg-info text-white">Sauce</h5>
             <div class="card-body">
                 <h6 class="card-title">How Much?</h6>
                 <!--Selector Starts here-->
@@ -179,8 +181,10 @@
                 <br>
                 <div class="text-right">
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary"><i class="fas fa-angle-left"></i>&nbsp;Size & Crust</button>
-                        <button type="button" class="btn btn-secondary">Toppings</button>
+
+                        <button type="button" href="home-tab" class="btn btn-secondary"><i class="fas fa-angle-left"></i>&nbsp;Size & Crust</button>
+
+                        <button type="button" class="btn btn-secondary">Toppings&nbsp;<i class="fas fa-angle-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -193,9 +197,8 @@
     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
         <div class="card">
-            <h5 class="card-header">Toppings</h5>
+            <h5 class="card-header bg-info text-white">Choose Meat</h5>
             <div class="card-body">
-                <h5 class="card-title">Choose Meat</h5>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
                     <label class="form-check-label" for="defaultCheck5">
@@ -226,9 +229,9 @@
         </div>
 
         <div class="card">
-            <h5 class="card-header">Toppings</h5>
+            <h5 class="card-header bg-info text-white">Choose Veggies</h5>
             <div class="card-body">
-                <h5 class="card-title">Choose Veggies</h5>
+
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
                     <label class="form-check-label" for="defaultCheck9">
@@ -257,7 +260,7 @@
                 <br>
                 <div class="text-right">
                 <button type="button" class="btn btn-secondary"><i class="fas fa-angle-left"></i>&nbsp;Back</button>
-                <button type="button" class="btn btn-secondary">Check Out</button>
+                <button type="button" class="btn btn-secondary">Check Out&nbsp;<i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>
         </div>
