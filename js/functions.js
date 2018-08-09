@@ -64,12 +64,10 @@ var random = Math.floor((Math.random() * 3) + 1);
 
 function isTwo(random) {
 
-    var 
-
-    // var ranumgenerator1 = 1 >= 2;
-    // var rannumgenrator2 = 2 >= 2;
-    // var rannumgenrator3 = 3 <= 2;
-    // return (random && rannumgenrator2 || ranumgenerator1 || rannumgenrator3);
+    var ranumgenerator1 = random >= 2;
+    var rannumgenrator2 = random >= 2;
+    var rannumgenrator3 = random <= 2;
+    return (random && rannumgenrator2 || ranumgenerator1 || rannumgenrator3);
 
 
 }
