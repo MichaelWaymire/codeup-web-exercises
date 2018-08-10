@@ -18,7 +18,7 @@
 //Functions!!
 
 
-var wantsToPutInANumber = confirm("Hello, would you kindly put in a number?")
+// var wantsToPutInANumber = confirm("Hello, would you kindly put in a number?")
 
 
 
@@ -115,6 +115,14 @@ var wantsToPutInANumber = confirm("Hello, would you kindly put in a number?")
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+
+function analyzeColor(){
+
+}
+
+
+
+
 
 // Don't change the next two lines!
 // These lines create two variables for you:
