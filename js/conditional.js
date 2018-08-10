@@ -15,6 +15,86 @@
  *
  * Can you refactor your code to use functions?
  */
+//Functions!!
+
+
+var wantsToPutInANumber = confirm("Hello, would you kindly put in a number?")
+
+
+
+
+//If Else
+// if (wantsToPutInANumber) {
+//     var userNumber = prompt("Put the number in here!");
+//     if (isItEven(userNumber)){
+//         alert("The number you picked was " + userNumber + ", you picked an Even Number!")
+//     } else {
+//         alert("The number you picked was " + userNumber + ", I can see you went with an Odd number!")
+//     }
+//     if (userNumber > 0) {
+//         alert("Look at that! " + userNumber + " Is a positive number")
+//     } else {
+//         alert("Look at that! " + userNumber + " Is a negative number")
+//     }
+//     alert(add100(userNumber));
+// } else {
+//  alert("That is no good.")
+//
+// }
+//
+// function isItEven(userNumber) {
+//     return parseInt(userNumber) % 2 === 0;
+// }
+//
+// function isItOdd(UserNumber) {
+//     Math.abs(parseInt(userNumber) % 2) ==1;
+//     return alert("The number you picked was " + userNumber + ", I can see you went with an Odd number!")
+// }
+//
+// function add100(userNumber){
+//     alert(parseInt(userNumber) + 100);
+//
+// }
+// var itsOdd = isItOdd(userNumber)
+
+
+// alert(add100(userNumber));
+// alert(isItEven(userNumber));
+
+//
+// confirm("Hello, would you kindly put in a number?");
+// var userNumber = prompt("Put the number in here!");
+//
+//
+// if (userNumber) {
+// var Even
+// function userNumberEven(UserNumber) {
+//     userNumber % 2 === 0;
+//
+// }
+//
+//
+//     // var userNumber = prompt("Put the number in here!");
+//     // return Math.abs(n % 2) == 1;
+//     // var userNumberOdd = Math.abs(parseInt(userNumber) % 2) ==1;
+//     // alert("The number you picked was " + userNumber + ", I can see you went with an Odd number!")
+//     // alert(parseInt(userNumber) + 100);
+//     // alert(-Math.abs(userNumber));
+//     // alert()
+//
+//
+//
+//
+//     // var userNumberEven = userNumber % 2 === 0;
+//     var userNumberOdd = Math.abs(parseInt(userNumber) % 2) == 1;
+//
+//     alert("The number you picked was " + userNumber + ", I can see you choose an Even Number!")
+//
+// } else if (userNumber){
+//
+//     alert("The number you picked was " + userNumber + ", I can see you went with an Odd number!")
+// }
+// console.log()
 
 /* ########################################################################## */
 
