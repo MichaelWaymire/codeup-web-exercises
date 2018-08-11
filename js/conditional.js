@@ -23,24 +23,24 @@
 
 
 
-//If Else
-// if (wantsToPutInANumber) {
-//     var userNumber = prompt("Put the number in here!");
-//     if (isItEven(userNumber)){
-//         alert("The number you picked was " + userNumber + ", you picked an Even Number!")
-//     } else {
-//         alert("The number you picked was " + userNumber + ", I can see you went with an Odd number!")
-//     }
-//     if (userNumber > 0) {
-//         alert("Look at that! " + userNumber + " Is a positive number")
-//     } else {
-//         alert("Look at that! " + userNumber + " Is a negative number")
-//     }
-//     alert(add100(userNumber));
-// } else {
-//  alert("That is no good.")
-//
-// }
+If Else
+if (wantsToPutInANumber) {
+    var userNumber = prompt("Put the number in here!");
+    if (isItEven(userNumber)){
+        alert("The number you picked was " + userNumber + ", you picked an Even Number!")
+    } else {
+        alert("The number you picked was " + userNumber + ", I can see you went with an Odd number!")
+    }
+    if (userNumber > 0) {
+        alert("Look at that! " + userNumber + " Is a positive number")
+    } else {
+        alert("Look at that! " + userNumber + " Is a negative number")
+    }
+    alert(add100(userNumber));
+} else {
+ alert("That is no good.")
+
+}
 //
 // function isItEven(userNumber) {
 //     return parseInt(userNumber) % 2 === 0;
@@ -115,10 +115,73 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+// var whatColorDoYouLike = confirm("Did you know colors are amazing?");
+//
 
-function analyzeColor(){
+
+var pickAColor = confirm("color")
+
+function analyzeColor(pickAColor){
+
+    var userColor = prompt("What is your favorite color?".toLowerCase());
+
+    if(userColor == "blue") {
+
+        alert(userColor + " is the color of the sky");
+    } else if (userColor == "red"){
+        alert(userColor + " is the color of strawberries");
+    } else if (userColor == "green") {
+        alert(userColor + " is the color of grass")
+    }
+
+
+    return userColor;
 
 }
+
+
+
+pickAColor
+
+
+
+// alert("blue is the color of teh sky");
+// alert("red is the color of strawberries");
+// alert("yellow is the color of the sun");
+// alert("green is the color of grass");
+// alert("You're turning violet, Violet!");
+// alert("Indigo-a-go-go?");
+// alert("orange you glad its not banana?");
+
+
+
+
+
+// function analyzeColor(userColor) {
+//
+//
+//     "blue" === blue;
+//
+//     "red" === red;
+//
+//     "yellow" === yellow;
+//
+//     "green" === green;
+//
+//     "violet" === violet;
+//
+//     "indigo" === indigo;
+//
+//     "orange" === orange;
+//
+//     return userColor
+// }
+
+console.log(analyzeColor())
+
+
+
+
 
 
 
