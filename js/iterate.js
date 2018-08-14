@@ -60,7 +60,7 @@
         console.log(input[1]);
     };
     var third = function(input) {
-        console.log(input[2]);
+        console.log(input[4]);
     };
     first(names);
     second(names);

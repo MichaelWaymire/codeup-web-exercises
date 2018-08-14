@@ -96,7 +96,7 @@
 
 
 function flipCoin(input) {
-    
+
 
 }
 
