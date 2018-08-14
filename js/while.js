@@ -1,29 +1,29 @@
-// 'use strict';
-// var count =2;
-//
-// while (count <= 65536) {
-//     console.log(count);
-//     count *= 2;
-// }
+'use strict';
+var count =2;
+
+while (count <= 65536) {
+    console.log(count);
+    count *= 2;
+}
 
 
 
-// While / Do loop
-// if (confirm("Do you want to play a game?")) {
-//     var magicNumber = Math.floor((Math.random() * 20) + 1);
-//     var ourGuess;
-//
-//     do {
-//         ourGuess = parseInt(prompt("Pick a number between 1 and 20"));
-//         if (typeof ourGuess != "number") continue;
-//         if (ourGuess < magicNumber) {
-//             alert("Your guess is too low");
-//         } else if (ourGuess > magicNumber) {
-//             alert("Your guess is too high");
-//         }
-//     } while (ourGuess !== magicNumber);
-//     alert("Congrats you got it!");
-// }
+//While / Do loop
+if (confirm("Do you want to play a game?")) {
+    var magicNumber = Math.floor((Math.random() * 20) + 1);
+    var ourGuess;
+
+    do {
+        ourGuess = parseInt(prompt("Pick a number between 1 and 20"));
+        if (typeof ourGuess != "number") continue;
+        if (ourGuess < magicNumber) {
+            alert("Your guess is too low");
+        } else if (ourGuess > magicNumber) {
+            alert("Your guess is too high");
+        }
+    } while (ourGuess !== magicNumber);
+    alert("Congrats you got it!");
+}
 
 
 if(confirm("Ice Cream Man jingle plays")) {
@@ -43,14 +43,7 @@ if(confirm("Ice Cream Man jingle plays")) {
     console.log("Sold Out");
 }
 
-
-
-
-
-
-
-
-    //     do {
+//     do {
 //         var conesSold = Math.floor(Math.random() * 5) +1;
 //         customerBought = console.log(conesSold + " cones sold, I have " + allCones + " left.");
 //         if(allCones > conesSold) {
@@ -64,6 +57,9 @@ if(confirm("Ice Cream Man jingle plays")) {
 //     console.log("Yay, I sold them all!")
 //
 // }
+
+
+
 
 
 
