@@ -59,22 +59,22 @@
 //     }
 // }
 
-While / Do loop
-if (confirm("Do you want to play a game?")) {
-    var magicNumber = Math.floor((Math.random() * 20) + 1);
-    var ourGuess;
-
-    do {
-        ourGuess = parseInt(prompt("Pick a number between 1 and 20"));
-        if (typeof ourGuess != "number") continue;
-        if (ourGuess < magicNumber) {
-            alert("Your guess is too low");
-        } else if (ourGuess > magicNumber) {
-            alert("Your guess is too high");
-        }
-    } while (ourGuess !== magicNumber);
-    alert("Congrats you got it!");
-}
+// While / Do loop
+// if (confirm("Do you want to play a game?")) {
+//     var magicNumber = Math.floor((Math.random() * 20) + 1);
+//     var ourGuess;
+//
+//     do {
+//         ourGuess = parseInt(prompt("Pick a number between 1 and 20"));
+//         if (typeof ourGuess != "number") continue;
+//         if (ourGuess < magicNumber) {
+//             alert("Your guess is too low");
+//         } else if (ourGuess > magicNumber) {
+//             alert("Your guess is too high");
+//         }
+//     } while (ourGuess !== magicNumber);
+//     alert("Congrats you got it!");
+// }
 
 // var count = 0;
 // while (count < 10){
@@ -92,6 +92,13 @@ if (confirm("Do you want to play a game?")) {
 // for (initialization; condition; increment)/**Dont put a ; here**/ {
 //      code goes here!
 // }
+
+
+
+function flipCoin(input) {
+    
+
+}
 
 
 
