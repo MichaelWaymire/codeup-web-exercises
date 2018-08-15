@@ -11,7 +11,7 @@
 /////////////////
 
 
-//if else loop
+// if else loop
 // // if else
 // var inputWeather = alert("Answer me!");
 //
@@ -58,7 +58,7 @@
 //         alert("Your score is " + count);
 //     }
 // }
-
+//
 // While / Do loop
 // if (confirm("Do you want to play a game?")) {
 //     var magicNumber = Math.floor((Math.random() * 20) + 1);
@@ -75,32 +75,30 @@
 //     } while (ourGuess !== magicNumber);
 //     alert("Congrats you got it!");
 // }
-
+//
 // var count = 0;
 // while (count < 10){
 //     console.log(count);
 //     count++;
 // }
-
+//
 // set up is the same to the example above
-
+//
 // for (var count = 0; count < 10; count++) {
 //     console.log(count);
-//}
-
+// }
+//
 // Break down for above code
 // for (initialization; condition; increment)/**Dont put a ; here**/ {
 //      code goes here!
 // }
 
 
-
-function flipCoin(input) {
-
-
-}
-
-
+//
+// function flipCoin(input) {
+//
+//
+// }
 
 
 
@@ -111,3 +109,21 @@ function flipCoin(input) {
 
 
 
+
+
+
+
+
+
+//fiz buzz
+
+// for (var i = 1; i <= 100; i++) {
+//     var expletive = '';
+//     if (i % 3 === 0) expletive += 'Fizz';
+//     if (i % 5 === 0) expletive += 'Buzz';
+//     console.log(expletive || i);
+// }
+
+
+var bugs = ['wasp', 'ants', 'dragonfly', 'mosquito', 'bees', 'flys', 'gnats', 'ladybug'];
+bugs.push('antlion');
