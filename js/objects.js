@@ -15,6 +15,7 @@
     var person = {};
     person.firstName = "Rick";
     person.lastName = "Sanchez";
+
     console.log(person.firstName);
     console.log(person.lastName);
     /**
@@ -97,8 +98,8 @@
         {Title: 'The Salmon of Doubt', Author: {firstName: 'Douglas', lastName: 'Adams'}},
         {Title: 'Walkaway', Author: {firstName: 'Cory', lastName: 'Doctorow'}},
         {Title: 'Sabrel', Author: {firstName: "Garth", lastName: 'Nix'}},
-        {Title: "Green Eggs and Ham", Author: { firstName: 'Dr.' lastName: "Susse"}},
-        {Title:}
+        {Title: 'Green Eggs and Ham', Author: { firstName: 'Dr.', lastName: 'Susse'}},
+        {Title: 'Crazy Rich Asain', Author: {firstName: 'Kevin', lastName: 'Kwan'}}
     ];
 
     books.forEach(function (books) {
