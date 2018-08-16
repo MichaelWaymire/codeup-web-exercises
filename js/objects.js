@@ -11,14 +11,12 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-    var person = new Object();
 
     var person = {};
-    
-
-
-
-
+    person.firstName = "Rick";
+    person.lastName = "Sanchez";
+    console.log(person.firstName);
+    console.log(person.lastName);
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -28,7 +26,10 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-
+    person.sayHello = function() {
+        console.log("Hello from Rick Sanchez!");
+    };
+    console.log(person.sayHello());
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -43,11 +44,42 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+    shoppers.forEach(function (shoppers) {
+        var totalAmount = shoppers.amount;
+        var discountAmount = .12;
+        var shoppersNames = shoppers.name;
+        var msg = shoppersNames + ", Your total is, $";
+
+
+        if(totalAmount >= 200) {
+            msg += (shoppers.amount - (totalAmount * discountAmount));
+        } else {
+            msg += totalAmount;
+        }
+
+        console.log(msg);
+    });
+
+    //
+    // function getDiscountApplied(inputShoppers) {
+    //    inputShoppers = this.amount;
+    //    var discountAmount = .12;
+    //    if(totalBillAmount >= 200) {
+    //        totalBillAmount * discountAmount;
+    //    } else {
+    //        console.log("Your total today is, " + inputShoppers);
+    //    }
+    //
+    //
+    // }
+    // console.log(getDiscountApplied(shoppers));
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -61,6 +93,10 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    var books =- [
+        {Title: 'The Salmon of Doubt', Author: {firstName: 'Douglas', lastName: 'Adams'}},
+        {Title: 'Walkaway', Author: {firstName: 'Cory', LastName: 'Doctorow'}}
+    ];
 
     /**
      * TODO:
@@ -97,5 +133,8 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+
+
 
 })();
