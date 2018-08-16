@@ -93,10 +93,25 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-    var books =- [
+    var books = [
         {Title: 'The Salmon of Doubt', Author: {firstName: 'Douglas', lastName: 'Adams'}},
-        {Title: 'Walkaway', Author: {firstName: 'Cory', LastName: 'Doctorow'}}
+        {Title: 'Walkaway', Author: {firstName: 'Cory', lastName: 'Doctorow'}},
+        {Title: 'Sabrel', Author: {firstName: "Garth", lastName: 'Nix'}},
+        {Title: "Green Eggs and Ham", Author: { firstName: 'Dr.' lastName: "Susse"}},
+        {Title:}
     ];
+
+    books.forEach(function (books) {
+        var bookTitle = books.Title;
+        var authorFistName = books.Author.firstName;
+        var authorLastName = books.Author.lastName;
+        var combineNamesAndTitles = "'" + bookTitle + "'" + " written by: " + authorFistName + " " + authorLastName;
+
+        console.log(combineNamesAndTitles)
+
+
+    });
+
 
     /**
      * TODO:
