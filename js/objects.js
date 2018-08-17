@@ -138,7 +138,14 @@
      *      ---
      *      ...
      */
+    books.forEach(function (books) {
+        var bookNumber = ['1', '2', '3', '4', '5'];
+        var book = "Book #" + bookNumber + books.Title ;
 
+        console.log(book)
+
+
+    });
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
