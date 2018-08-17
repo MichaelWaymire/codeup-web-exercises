@@ -95,11 +95,11 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
     var books = [
-        {Title: 'The Salmon of Doubt', Author: {firstName: 'Douglas', lastName: 'Adams'}},
-        {Title: 'Walkaway', Author: {firstName: 'Cory', lastName: 'Doctorow'}},
-        {Title: 'Sabrel', Author: {firstName: "Garth", lastName: 'Nix'}},
-        {Title: 'Green Eggs and Ham', Author: { firstName: 'Dr.', lastName: 'Susse'}},
-        {Title: 'Crazy Rich Asain', Author: {firstName: 'Kevin', lastName: 'Kwan'}}
+        {number: '1', Title: 'The Salmon of Doubt', Author: {firstName: 'Douglas', lastName: 'Adams'}},
+        {number: '2', Title: 'Walkaway', Author: {firstName: 'Cory', lastName: 'Doctorow'}},
+        {number: '3', Title: 'Sabrel', Author: {firstName: "Garth", lastName: 'Nix'}},
+        {number: '4', Title: 'Green Eggs and Ham', Author: { firstName: 'Dr.', lastName: 'Susse'}},
+        {number: '5', Title: 'Crazy Rich Asain', Author: {firstName: 'Kevin', lastName: 'Kwan'}}
     ];
 
     books.forEach(function (books) {
@@ -138,14 +138,15 @@
      *      ---
      *      ...
      */
-    books.forEach(function (books) {
-        var bookNumber = ['1', '2', '3', '4', '5'];
-        var book = "Book #" + bookNumber + books.Title ;
+    // books.forEach(function (books) {
+    //
+    //     var book = "Book # " + books.number + '\n' +'Title: ' +books.Title + '\n'
+    //     + 'Author: ' + books.Author.firstName + ' ' + books.Author.lastName;
+    //
+    //     console.dir(book);
+    // });
 
-        console.log(book)
 
-
-    });
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -157,7 +158,24 @@
      *   `showBookInfo` function.
      */
 
+    var createBook = function (title, author) {
+        var book = {};
+        book.title = title;
+        if (typeof author === "string"){
+            var names = author.split(" ");
+            var authObj = {
+                firstName: names[0],
+                lastName: names[1]
+            }
 
+        } else if (typeof author === "object") {
+            book.author = author;
+        }
+
+
+        return book;
+    }
+console.log(createBook("The Salmon of Doubt", {firstName: "Douglas", lastName: "Adam"}));
 
 
 })();

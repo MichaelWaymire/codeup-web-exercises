@@ -163,17 +163,43 @@
 
 
 
+//
+// function findLongestWord(input) {
+//     var inputSplit = input.split(' ');
+//     var longestWord = 0;
+//     for(var i = 0; i < inputSplit.length; i++){
+//         if(inputSplit[i].length > longestWord){
+//             longestWord = inputSplit[i].length;
+//         }
+//     }
+//     return longestWord;
+// }
+// console.log(findLongestWord("I like going out to parties with friends or watching TV"));
+//
+//
 
-function findLongestWord(input) {
-    var inputSplit = input.split(' ');
-    var longestWord = 0;
-    for(var i = 0; i < inputSplit.length; i++){
-        if(inputSplit[i].length > longestWord){
-            longestWord = inputSplit[i].length;
-        }
-    }
-    return longestWord;
+// function pullTheWord(input) {
+//     var maxWord = 0;
+//     var word = '-1';
+//     var wordCounter = input.split(' ');
+//     for (var i = 0; i < wordCounter.length; i++) {
+//         for (var a = 0; a <wordCounter[i]; a++);{
+//             var countAgain = 0;
+//             for (var b = a + 1; b < wordCounter[i].length; b++){
+//                 if (wordCounter[i] [a] === wordCounter [i] [b])
+//                     var countNew += 1;
+//             }
+//             if (countNew > count) {
+//                 count = countNew;
+//                 word = wordCounter[i];
+//             }
+//         }
+//
+//     }
+//     return word;
+// }
+// console.log(pullTheWord("Marry, Mississippi"));
+
+function wordCounter(input) {
+
 }
-console.log(findLongestWord("I like going out to parties with friends or watching TV"));
-
-
