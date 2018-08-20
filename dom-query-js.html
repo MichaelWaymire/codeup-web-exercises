@@ -9,6 +9,7 @@
 
 <h1 id="main-header">Hello World!</h1>
 <ul>
+    <!-- data-dbig = tag -->
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
     <li data-dbid="3">Item 3</li>
@@ -51,9 +52,21 @@
 
         // TODO: Set text color on every other list item to grey
         // TODO: Set text color of li with dbid = 1 to blue
-        document.getElementsByTagName("1").style.color = "blue";
-        document.getElementsByTagName('li')[1].style.color = "grey";
-        document.getElementsByTagName('li')[3].style.color = "grey";
+       for (var i = 0; i < listItems.length; i += 2) {
+            listItems[i].style.color = "grey";
+        }
+
+        for (var i = 0; i < listItems.length; i++) {
+            var firstListItem = listItems[i].getAttribute('data-dbid');
+                if (firstListItem === "1") {
+                    listItems[i].style.color = "#0000ff";
+                }
+                console.log(firstListItem);
+        }
+
+        // document.listIts.style.color = "blue";
+        // document.getElementsByTagName('li')[1].style.color = "grey";
+        // document.getElementsByTagName('li')[3].style.color = "grey";
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
         console.log(subParagraphs);
