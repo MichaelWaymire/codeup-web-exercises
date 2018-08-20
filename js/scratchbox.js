@@ -271,16 +271,14 @@ function isItOdd(input) {
 }
 console.log(isItOdd());
 
-// function isItEven(input) {
-//     var input = 0;
-//     while (input <= 101) {
-//         if (input % 1){
-//             document.write(input + "is even number <br>");
-//             input = input +1;
-//         } else {
-//             document.write(input + "is even odd <br>");
-//             input = input +1;
-//         }
-//     }
-// }
-// console.log(isItEven());
+function identiy(input) {
+    input = input;
+    return input;
+}
+console.log(identiy(5));
+
+function addFive(input) {
+    input = input + 5;
+    return input;
+}
+console.log(addFive(5));
