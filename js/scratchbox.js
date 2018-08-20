@@ -128,8 +128,6 @@
 // var bugs = ['wasp', 'ants', 'dragonfly', 'mosquito', 'bees', 'flys', 'gnats', 'ladybug'];
 // bugs.push('antlion');
 
-
-
 // /**Define a function named allIndexesOf that takes in two arguments.
 //      * The first argument should be the array to search and the second argument
 //  * should be the value you want to search for. If the item does not exist
@@ -161,8 +159,6 @@
 //
 //
 
-
-
 //
 // function findLongestWord(input) {
 //     var inputSplit = input.split(' ');
@@ -177,6 +173,7 @@
 // console.log(findLongestWord("I like going out to parties with friends or watching TV"));
 //
 //
+
 
 // function pullTheWord(input) {
 //     var maxWord = 0;
@@ -204,7 +201,7 @@
 
 // }
 
-
+//
 // /**Make a function named isOdd(number)
 // Make a function named isEven(number)
 // Make a function named identity(input) that returns the input exactly as provided.
@@ -282,20 +279,21 @@
 //     return input;
 // }
 // console.log(addFive(5));
+//
+//
+// /** loop
+//
+//  **/
+//
+// var a = parseInt(prompt("Give me a number"));
+// var b = parseInt(prompt("Give me a second number"));
+//
+// function isItMath(a, b) {
+//       var product = a;
+//       for (var i = 1; i<b; i++) {
+//           document.write(product += a);
+//
+//       }
+//     return product;
+// }//
 
-
-/** loop
-
- **/
-
-var a = parseInt(prompt("Give me a number"));
-var b = parseInt(prompt("Give me a second number"));
-
-function isItMath(a, b) {
-      var product = a;
-      for (var i = 1; i<b; i++) {
-          document.write(product += a);
-
-      }
-    return product;
-}
