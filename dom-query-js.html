@@ -35,6 +35,7 @@
 <button id="button4">First list item to blue</button>
 <br>
 <button id="button5">Mission Completed!</button>
+<button id="button6">Undo</button>
 <script>
     (function() {
         "use strict";
@@ -81,8 +82,6 @@
         document.getElementById('button3').addEventListener('click', listColorChanger, false);
 
         var listColorBlue = function (input) {
-
-
             for (var i = 0; i < listItems.length; i++) {
                 var firstListItem = listItems[i].getAttribute('data-dbid');
                 if (firstListItem === "1") {
@@ -93,9 +92,6 @@
         };
         document.getElementById('button4').addEventListener('click', listColorBlue, false);
 
-        // document.listIts.style.color = "blue";
-        // document.getElementsByTagName('li')[1].style.color = "grey";
-        // document.getElementsByTagName('li')[3].style.color = "grey";
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
 
         var missionCompleted = function (input) {
@@ -103,8 +99,9 @@
             console.log(subParagraphs);
             // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
             subParagraphs[0].innerHTML = "Mission Accomplished!"
-        }
+        };
         document.getElementById('button5').addEventListener('click', missionCompleted, false);
+
     })();
 </script>
 </body>
