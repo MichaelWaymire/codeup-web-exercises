@@ -9,8 +9,8 @@
 //  While/DO   //
 //             //
 /////////////////
-
-
+//
+//
 // if else loop
 // // if else
 // var inputWeather = alert("Answer me!");
@@ -92,42 +92,43 @@
 // for (initialization; condition; increment)/**Dont put a ; here**/ {
 //      code goes here!
 // }
-
-
+//
+//
 //
 // function flipCoin(input) {
 //
 //
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //fiz buzz
-
+//
 // for (var i = 1; i <= 100; i++) {
 //     var expletive = '';
 //     if (i % 3 === 0) expletive += 'Fizz';
 //     if (i % 5 === 0) expletive += 'Buzz';
 //     console.log(expletive || i);
 // }
-
-
+//
+//
 // var bugs = ['wasp', 'ants', 'dragonfly', 'mosquito', 'bees', 'flys', 'gnats', 'ladybug'];
 // bugs.push('antlion');
-
+//
 // /**Define a function named allIndexesOf that takes in two arguments.
 //      * The first argument should be the array to search and the second argument
 //  * should be the value you want to search for. If the item does not exist
@@ -158,7 +159,7 @@
 //  **/
 //
 //
-
+//
 //
 // function findLongestWord(input) {
 //     var inputSplit = input.split(' ');
@@ -173,8 +174,8 @@
 // console.log(findLongestWord("I like going out to parties with friends or watching TV"));
 //
 //
-
-
+//
+//
 // function pullTheWord(input) {
 //     var maxWord = 0;
 //     var word = '-1';
@@ -196,11 +197,11 @@
 //     return word;
 // }
 // console.log(pullTheWord("Marry, Mississippi"));
-
+//
 // function wordCounter(input) {
-
+//
 // }
-
+//
 //
 // /**Make a function named isOdd(number)
 // Make a function named isEven(number)
@@ -295,5 +296,29 @@
 //
 //       }
 //     return product;
-// }//
+// }
+//
+//
+//
+//
+// function factThis(input) {
+//     for (var i = input - 1; i >= 1; i--) {
+//         input = input * i;
+//     }
+//     return input;
+// }
+// console.log(factThis(10));
+//
+// function summantionThis(num) {
+//     var product = 0;
+//     for (var i = num; i > 0; i--){
+//         product += i;
+//     }
+//     return product;
+//
+// }
+//
+// console.log(summantionThis(5));
+//
+
 

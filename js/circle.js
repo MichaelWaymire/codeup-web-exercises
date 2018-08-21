@@ -13,6 +13,7 @@
             return area; // TODO: return the proper value
         },
 
+
         logInfo: function (doRounding) {
             // TODO: complete this method.
             if (doRounding === true){
