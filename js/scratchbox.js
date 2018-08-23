@@ -328,17 +328,17 @@
 // }
 // console.log(capializeFirstLetter());
 
-function capitalizeFirstLetter(input) {
-
-	for (var i = i = 0; i < 1; i++) {
-		console.log(input && input[i].toUpperCase() + input.slice(1).toLowerCase());
-	}
-
-	// return input[0].toUpperCase() +  + input.slice(1);
-}
-
-
-console.log(capitalizeFirstLetter("doG"));
+// function capitalizeFirstLetter(input) {
+//
+// 	for (var i = i = 0; i < 1; i++) {
+// 		console.log(input && input[i].toUpperCase() + input.slice(1).toLowerCase());
+// 	}
+//
+// 	// return input[0].toUpperCase() +  + input.slice(1);
+// }
+//
+//
+// console.log(capitalizeFirstLetter("doG"));
 
 
 /**Make a function named isOdd(number)
@@ -350,8 +350,18 @@ Make a function named addFive(input) that adds five to some input.
 Make a function named isThree(input)
 Make a function named isMultipleOfThree(input)
 
-Make a function named isMultipleOf(target, n) which checks if target is evenly divisible by n
-Make a function named isTrue(boolean)
+Make a function named isMultipleOf(target, n) which checks if target is evenly divisible by n **/
+
+ var isMultipleOf = function(a, b) {
+     if(a % b === 0) {
+	     return true;
+     } else {
+     	return false;
+     }
+};
+ console.log(isMultipleOf(15, 4));
+
+/**Make a function named isTrue(boolean)
 Make a function named isFalse(boolean)
 Make a function named isTruthy(input) // remember that values other than true will behave like true
 Make a function named isFalsy(input) // remember that values other than false behave like false
@@ -455,39 +465,52 @@ Make a function named absoluteValue(number) that returns the absolute value of a
 // console.log(isMultipleoOfThreeAndFive(5));
 // console.log(isMultipleoOfThreeAndFive(1));
 
-function sortThem(a,b,c,d,e) {
-	var largestNumber = [a,b,c,d,e];
-	largestNumber = largestNumber.sort(
-		function (a,b) {
-			return b-a
-		}
-	);
-	return largestNumber;
-}
-console.log(sortThem(1,5,8,3,-9));
+// function sortThem(a,b,c,d,e) {
+// 	var largestNumber = [a,b,c,d,e];
+// 	largestNumber = largestNumber.sort(
+// 		function (a,b) {
+// 			return b-a
+// 		}
+// 	);
+// 	return largestNumber;
+// }
+// console.log(sortThem(1,5,8,3,-9));
+//
+//
+// function eighty(a,b) {
+// 	if((a === 80 || b === 80) || (a+b === 80)){
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+//
+// }
+// console.log(eighty(80,5));
 
 
-function eighty(a,b) {
-	if((a === 80 || b === 80) || (a+b === 80)){
-		return true;
-	} else {
-		return false;
+
+var me = {
+	name: "Michael waymire",
+	hairColor: "Blond",
+	eyeColor: "Blue",
+	birthDay:{
+		month: 3,
+		Day: 13
 	}
+};
+var name =prompt("what is your name?");
+var birthDay = prompt("what is your Bday?");
 
-}
-console.log(eighty(80,5));
+var addSomeone = function (name) {
+	me.push(name);
 
+	console.log("Hello " + name);
+};
+addSomeone(name)
 
-var pyAdder = function(str){
-	str = str.toLowerCase();
-	if(str.substr(0,2)) === "py";{
-		return str;
-	} else {
-		str = "py" + str;
-	}
-}
-
-
+//
+// var peers = [];
+// me.push(me);
 
 
 
