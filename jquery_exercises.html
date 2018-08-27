@@ -8,12 +8,13 @@
 
 
 <body>
-
-<ul class="nav-Bar codeup">
+<div class="links-nav">
+<ul class="nav-Bar">
     <li><a id="nav-home" href="#">Home</a></li>
     <li><a id="nav-link" href="#">Link</a></li>
     <li><a id="nav-obcj" href="#">Object</a></li>
 </ul>
+</div>
 
 <h1 class="codeup" id="hello-h1">Hello, World!</h1>
 
@@ -24,11 +25,22 @@
 
 
 
-<p class="para-lorem codeup">
+<p class="para-lorem width-80">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quidem quis reiciendis tenetur?
+    Adipisci, aliquam animi asperiores cum dolorem error exercitationem illum, ipsum odio, omnis
+    porro repellat reprehenderit tempore vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quidem quis reiciendis tenetur?
     Adipisci, aliquam animi asperiores cum dolorem error exercitationem illum, ipsum odio, omnis
     porro repellat reprehenderit tempore vel?
 </p>
+
+<p class="para-lorem width-80">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quidem quis reiciendis tenetur?
+    Adipisci, aliquam animi asperiores cum dolorem error exercitationem illum, ipsum odio, omnis
+    porro repellat reprehenderit tempore vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quidem quis reiciendis tenetur?
+    Adipisci, aliquam animi asperiores cum dolorem error exercitationem illum, ipsum odio, omnis
+    porro repellat reprehenderit tempore vel?
+</p>
+
 
 </body>
 
@@ -38,9 +50,21 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
 
-    $("li, p, h1").css({"font-size": "20px", "display": "inline",
-        "border": "2px solid pink", "background-color": "black",
-        "color": "white"});
+	$("h1").click(function(){
+        $(".codeup").css({"background-color": "green",
+                        "color": "white"});
+	});
+
+	$("p").dblclick(function () {
+        $(".para-lorem").css({"font-size": "18px"});
+	});
+
+    $("li").hover(function () {
+    	$(".links-nav").css({"background.color": "plum"});
+
+    })
+
+
 
 
 </script>
