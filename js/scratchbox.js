@@ -514,131 +514,262 @@ Make a function named absoluteValue(number) that returns the absolute value of a
 //
 
 //Simple Array practice
-
-var daysOfTheWeek = ['Monday', 'Tuesday', "Wednesday","Thursday"];
-console.log(daysOfTheWeek);
-//Adds to the start of the array
-daysOfTheWeek.push("Friday");
-console.log(daysOfTheWeek);
-//adds string at the end
-daysOfTheWeek.unshift("Sunday", "Saturday");
-console.log(daysOfTheWeek);
-
-daysOfTheWeek.sort();
-console.log(daysOfTheWeek);
-
-//Removing 'items' from arrays
-var todoList = ['Take out the trash','Clean the car','Pay the bills'];
-
-console.log('My todo list:');
-console.log(todoList);
-
-console.log('Completing the last item: ' + todoList[todoList.length - 1]);
-
-// .pop removed the last item from an array
-var removedItem = todoList.pop();
-
-console.log('Task Completed: ' + removedItem);
-
-console.log(todoList);
-
-console.log('Completing the first item: ' + todoList[0]);
-
-// .shift removes the first item
-var doneItem = todoList.shift();
-
-console.log('Takse complete: ' + doneItem);
-
-console.log(todoList);
-
-
-//locating array elements
-var colors = ['red','blue','green','yellow','purple','indigo'];
-//index locates the element in the array and reports the position
-var index = colors.indexOf('green');
-console.log('Where is the color Green in the array: ' + index);
-//index searchs from the start of the array
-index = colors.indexOf('red');
-console.log(index);
-//starts the search at the end
-index = colors.lastIndexOf('red');
-console.log(index);
-
-
-// .slice allows us to copy a portion of an array.
-var slice = colors.slice(2, 4);
-console.log(colors);
-
-//slice(2, 4) copys array spots 2 and 4
-console.log(slice);
-
-//slice(3) copys from the 3rd spot onwards.
-slice = colors.slice(3);
-console.log(slice);
-
-//Reversing
-console.log(colors);
-console.log('Reversing the colors array.');
-colors.reverse();
-console.log(colors);
-
-//sorting
-console.log(colors);
-console.log('Sorting the colors array.');
-colors.sort();
-console.log(colors);
-
-//splitting turns the string into an array.
-
-var namesString = 'Mike, Hunter, James, Step, Col, Tamisha';
-console.log(namesString);
-
-var namesArray = namesString.split(',');
-
-console.log(namesArray);
-
-//Joining will take an array and conver it to a string.
+//
+// var daysOfTheWeek = ['Monday', 'Tuesday', "Wednesday","Thursday"];
+// console.log(daysOfTheWeek);
+// //Adds to the start of the array
+// daysOfTheWeek.push("Friday");
+// console.log(daysOfTheWeek);
+// //adds string at the end
+// daysOfTheWeek.unshift("Sunday", "Saturday");
+// console.log(daysOfTheWeek);
+//
+// daysOfTheWeek.sort();
+// console.log(daysOfTheWeek);
+//
+// //Removing 'items' from arrays
+// var todoList = ['Take out the trash','Clean the car','Pay the bills'];
+//
+// console.log('My todo list:');
+// console.log(todoList);
+//
+// console.log('Completing the last item: ' + todoList[todoList.length - 1]);
+//
+// // .pop removed the last item from an array
+// var removedItem = todoList.pop();
+//
+// console.log('Task Completed: ' + removedItem);
+//
+// console.log(todoList);
+//
+// console.log('Completing the first item: ' + todoList[0]);
+//
+// // .shift removes the first item
+// var doneItem = todoList.shift();
+//
+// console.log('Takse complete: ' + doneItem);
+//
+// console.log(todoList);
+//
+//
+// //locating array elements
+// var colors = ['red','blue','green','yellow','purple','indigo'];
+// //index locates the element in the array and reports the position
+// var index = colors.indexOf('green');
+// console.log('Where is the color Green in the array: ' + index);
+// //index searchs from the start of the array
+// index = colors.indexOf('red');
+// console.log(index);
+// //starts the search at the end
+// index = colors.lastIndexOf('red');
+// console.log(index);
+//
+//
+// // .slice allows us to copy a portion of an array.
+// var slice = colors.slice(2, 4);
+// console.log(colors);
+//
+// //slice(2, 4) copys array spots 2 and 4
+// console.log(slice);
+//
+// //slice(3) copys from the 3rd spot onwards.
+// slice = colors.slice(3);
+// console.log(slice);
+//
+// //Reversing
+// console.log(colors);
+// console.log('Reversing the colors array.');
+// colors.reverse();
+// console.log(colors);
+//
+// //sorting
+// console.log(colors);
+// console.log('Sorting the colors array.');
+// colors.sort();
+// console.log(colors);
+//
+// //splitting turns the string into an array.
+//
+// var namesString = 'Mike, Hunter, James, Step, Col, Tamisha';
+// console.log(namesString);
+//
+// var namesArray = namesString.split(',');
+//
+// console.log(namesArray);
+//
+//Joining will take an array and convert it to a string.
 var nameArray = ['Patrick','Mike','John'];
 console.log(nameArray);
 
 var nameString = nameArray.join(', ');
 console.log(nameString);
+//
+//
+// (function(){
+// 	"use strict";
+//
+// 	var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+// 	// var planetsArray;
+//
+// 	/**
+// 	 * TODO:
+// 	 * Convert planetsString to an array, and save it in a variable named
+// 	 * planetsArray.
+// 	 * console.log planetsArray to check your work
+// 	 */
+// 	var planetsArray = planetsString.split('|');
+// 	console.log(planetsArray);
+//
+//
+//
+// 	planetsArray = planetsArray.join("<br>");
+// 	console.log(planetsArray);
+//
+// 	/**
+// 	 * TODO:
+// 	 * Create a string with <br> tags between each planet. console.log() your
+// 	 * results. Why might this be useful?
+// 	 * BONUS:
+// 	 * Create another string that would display your planets in an undordered
+// 	 * list. You will need an opening AND closing <ul> tags around the entire
+// 	 * string, and <li> tags around each planet.
+// 	 */
+//
+//
+//
+// Object in Objects
+// var car = [
+// 	{
+// 		make: "Toyota",
+// 		model: "Camry",
+// 		features: ['Automatic Windows', "Bluetooth Connectivity",
+// 			"GPS Navagation"],
+// 		owner: {
+// 			name: "Jane Doe",
+// 			age: 30
+// 		}
+// 	},
+// 	{
+// 		make: "Honda",
+// 		modle: "Accord",
+// 		features: ["Automatic Windows","Great Gas Mileage",
+// 			"AM/FM Radio"],
+// 		owner:{
+// 			name: "John Doe",
+// 			age: 31
+// 		}
+// 	}
+// ];
+//
+// console.log("The first car is a " + car[0].make + " " + car[0].model + ".");
+// console.log("The ownder of the second car is " + car[1].owner.name + ".");
+//
+// console.log("Here are all the features of all the cars:");
+// car.forEach(function (cars) {
+// 	cars.features.forEach(function (feature) {
+// 		console.log(feature);
+// 	});
+//
+// });
+//
+// var vehicals = {};
+// car.make = 'Toyota';
+// car.model = "Camry";
+//
+// car.honk = funcations () {
+// 	alert("honk! honk!");
+// };
+//
+//
+// car.honk();
+
+// // Math.Random retursns a random number between the two params (a,b);
+// function getRandomInt(min, max){
+// 	return Math.floor(Math.random() * (max - min +1) + min);
+// }
+// console.log("Give me that number! " + getRandomInt(1, 100));
+//
+//
+// // Math.round rounds the number to the nearest whole
+// console.log(Math.round(20.49));
+// console.log(Math.round(20.5));
+// console.log(Math.round(-20.5));
+// console.log(Math.round(-20.51));
+//
+// //Math.ceil() function returns the smalles integer greather than or equal
+// //to a number.
+//
+// console.log(Math.ceil(.95));
+// console.log(Math.ceil(4));
+// console.log(Math.ceil(7.004));
+//
+// //Math.pow() funcation returns the base to the exponent power
+//
+// // 2 raised to the 16th power
+// console.log(Math.pow(2, 16));
+// console.log(Math.pow(3, 10));
+
+var dogs = [
+	{
+		name: "Annie",
+		age: 3,
+		breed: "labradoodle",
+		bark: function () {
+			console.log("BorkBork!")
+
+		}
+    },
+	{
+		name: "Roxeanne",
+		age: 7,
+		breed: "Cocker Spaniel",
+		sex: "female",
+		legs: 3,
+		bark: function(){
+		console.log("BarkBark!!")
+	}
+	},
+	{
+		name: "pookiepoo",
+		age: 2,
+		breed: "chihuahua",
+		bark: function () {
+			console.log("BorkBork!")
+		}
+	},
+	{
+		name: "Snoopadoop",
+		age: 2,
+		breed: "Cockapoo",
+		nobleHound: true,
+		bark: function () {
+			console.log("BorkBork!")
+		}
+	},
+];
+function ourFunction(dog) {
+	for(var i = 0; i < dog.length; i++){
+		if (dog[i].age >= 3) {
+			console.log(dog[i].name);
+		}
+	}
+}
+//call the array in the paramater
+console.log(ourFunction(dogs));
+
+function writeOldAnimals(animals){
+	for(var i = 0; i < animals.length; i++){
+		if (animals[i].sex === "female"){
+			console.log(animals[i].name)
+		}
+	}
+}
+writeOldAnimals(dogs);
 
 
-(function(){
-	"use strict";
-
-	var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-	// var planetsArray;
-
-	/**
-	 * TODO:
-	 * Convert planetsString to an array, and save it in a variable named
-	 * planetsArray.
-	 * console.log planetsArray to check your work
-	 */
-	var planetsArray = planetsString.split(',');
-	console.log(planetsArray);
-
-	/**
-	 * TODO:
-	 * Create a string with <br> tags between each planet. console.log() your
-	 * results. Why might this be useful?
-
-	 * BONUS:
-	 * Create another string that would display your planets in an undordered
-	 * list. You will need an opening AND closing <ul> tags around the entire
-	 * string, and <li> tags around each planet.
-	 */
-
-
-
-})();
-
-
-
-
-
-
-
-
+function allDogs (input){
+	for(var i = 0; i < input.length; i++){
+		input[i].bark();
+		}
+}
+console.log(allDogs(dogs));

@@ -64,6 +64,7 @@ fieldset {
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Calculate based on the padding of the `.btn` class */
     width: calc(100% - 8px);
+    border: 1px;
 
 }
 
