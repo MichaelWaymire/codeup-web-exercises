@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Konami Code</title>
 </head>
 <body>
 <style>
 
-    #toastyImg{
+    #toastyImg {
         width: 1px;
         height: 1px;
     }
+
 
 </style>
 <h1>Konami Code</h1>
@@ -22,71 +28,59 @@
     <img id="toastyImg" src="images/Toasty!MK3.png">
 </div>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://button.glitch.me/button.js"></script>
 <script>
-    "use strict";
+	"use strict";
 
 
-    var global = {
+	var konamieCode = {
 
-	    konami: function() {
-		    var konamikeys = [38,38,40,40,37,39,37,39,66,65],
-			    started = false,
-			    count = 0;
+		konami: function () {
+			var konamikeys = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13],
+				started = false,
+				count = 0;
 
-		    $(document).keydown(function(e){
-			    var reset = function() {
-				    started = false;
-				    count = 0;
-				    return;
-			    };
+			$(document).keydown(function (e) {
+				var reset = function () {
+					started = false;
+					count = 0;
+					return;
+				};
 
-			    var key = e.keyCode;
+				var key = e.keyCode;
+				if (!started) {
+					if (key == 38) {
+						started = true;
+					}
+				}
+				if (started) {
+					if (konamikeys[count] == key) {
+						count++;
+					} else {
+						// Incorrect key, restart.
+						reset();
+					}
+					if (count == 11) {
+						// Success!
+						toatsTosty.play();
+						$("#toastyImg").animate({
+							right: '50px',
+							height: '+=250px',
+							width: '+=250px'
+						}, "fast");
 
-			    // Begin watching if first key in sequence was pressed.
-			    if(!started){
-				    if(key == 38){
-					    started = true;
-				    }
-			    }
+						reset();
+					}
+				} else {
+					reset();
+				}
+			});
+		}
+	};
 
-			    // If we've started, pay attention to key presses, looking for right sequence.
-			    if (started){
-
-				    if (konamikeys[count] == key){
-					    count++;
-				    } else {
-					    // Incorrect key, restart.
-					    reset();
-				    }
-				    if (count == 10){
-					    // Success!
-					    toatsTosty.play();
-					    $("#toastyImg").animate({
-						    right: '50px',
-						    height: '+=350px',
-						    width: '+=350px'
-
-					    },"fast");
-
-
-
-					    // alert('Konami code entered! Do something cool here.');
-					    reset();
-				    }
-			    } else {
-				    reset();
-			    }
-		    });
-	    }
-    }
-
-    global.konami();
-
-
-    // Animate / play sound
-
+	konamieCode.konami();
 
 
 </script>
