@@ -708,68 +708,84 @@ console.log(nameString);
 // // 2 raised to the 16th power
 // console.log(Math.pow(2, 16));
 // console.log(Math.pow(3, 10));
+//
+// var dogs = [
+// 	{
+// 		name: "Annie",
+// 		age: 3,
+// 		breed: "labradoodle",
+// 		bark: function () {
+// 			console.log("BorkBork!")
+//
+// 		}
+//     },
+// 	{
+// 		name: "Roxeanne",
+// 		age: 7,
+// 		breed: "Cocker Spaniel",
+// 		sex: "female",
+// 		legs: 3,
+// 		bark: function(){
+// 		console.log("BarkBark!!")
+// 	}
+// 	},
+// 	{
+// 		name: "pookiepoo",
+// 		age: 2,
+// 		breed: "chihuahua",
+// 		bark: function () {
+// 			console.log("BorkBork!")
+// 		}
+// 	},
+// 	{
+// 		name: "Snoopadoop",
+// 		age: 2,
+// 		breed: "Cockapoo",
+// 		nobleHound: true,
+// 		bark: function () {
+// 			console.log("BorkBork!")
+// 		}
+// 	},
+// ];
+// function ourFunction(dog) {
+// 	for(var i = 0; i < dog.length; i++){
+// 		if (dog[i].age >= 3) {
+// 			console.log(dog[i].name);
+// 		}
+// 	}
+// }
+// //call the array in the paramater
+// console.log(ourFunction(dogs));
+//
+// function writeOldAnimals(animals){
+// 	for(var i = 0; i < animals.length; i++){
+// 		if (animals[i].sex === "female"){
+// 			console.log(animals[i].name)
+// 		}
+// 	}
+// }
+// writeOldAnimals(dogs);
+//
+//
+// function allDogs (input){
+// 	for(var i = 0; i < input.length; i++){
+// 		input[i].bark();
+// 		}
+// }
+// console.log(allDogs(dogs));
 
-var dogs = [
-	{
-		name: "Annie",
-		age: 3,
-		breed: "labradoodle",
-		bark: function () {
-			console.log("BorkBork!")
-
+function fizzbuzz() {
+	for(var i = 0; i < 101; i++){
+		if( i % 15 === 0){
+			document.write(" fizzbuz, ");
+		} else if( i % 5 === 0){
+			document.write(" buzz, ");
+		} else if( i % 3 === 0){
+			document.write(" fizz, ");
+		} else {
+			document.write(" "+ i + ", ")
 		}
-    },
-	{
-		name: "Roxeanne",
-		age: 7,
-		breed: "Cocker Spaniel",
-		sex: "female",
-		legs: 3,
-		bark: function(){
-		console.log("BarkBark!!")
 	}
-	},
-	{
-		name: "pookiepoo",
-		age: 2,
-		breed: "chihuahua",
-		bark: function () {
-			console.log("BorkBork!")
-		}
-	},
-	{
-		name: "Snoopadoop",
-		age: 2,
-		breed: "Cockapoo",
-		nobleHound: true,
-		bark: function () {
-			console.log("BorkBork!")
-		}
-	},
-];
-function ourFunction(dog) {
-	for(var i = 0; i < dog.length; i++){
-		if (dog[i].age >= 3) {
-			console.log(dog[i].name);
-		}
-	}
-}
-//call the array in the paramater
-console.log(ourFunction(dogs));
 
-function writeOldAnimals(animals){
-	for(var i = 0; i < animals.length; i++){
-		if (animals[i].sex === "female"){
-			console.log(animals[i].name)
-		}
-	}
 }
-writeOldAnimals(dogs);
-
-
-function allDogs (input){
-	for(var i = 0; i < input.length; i++){
-		input[i].bark();
-		}
-}
-console.log(allDogs(dogs));
+fizzbuzz(1);

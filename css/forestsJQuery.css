@@ -1,0 +1,49 @@
+body {
+	background-color: #d9ac2a;
+}
+	
+
+dt{
+	color: #270101;
+}
+
+h1{
+	font-size: 50px;
+	padding: 45px 0 0 0;
+	color: #d8d583;
+}
+
+h3{
+	color: cornsilk;
+}
+
+.h1Facts{
+	box-shadow: 10px 13px 10px;
+	margin-top: 4em;
+	margin-left: 10em;
+	margin-left: 10em;
+	border-top-left-radius: 45%;
+	border-top-right-radius: 45%;
+	background-color: #720017;
+	width: 75%;
+	height: 125px;
+	text-align: center;
+}
+
+.dlBox {
+	box-shadow: 10px 10px 10px;
+	margin-left: 10em;
+	text-align: center;
+	background-color: #720017;
+	width: 75%;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+	
+}
+
+.invisible{
+	display: none;
+}
+.textColor{
+	color: #d8d583;
+}

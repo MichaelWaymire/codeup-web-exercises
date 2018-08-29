@@ -2,68 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JQuery Faqs!</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet">    <title>JQuery Faqs!</title>
+    <link href="js/jquery_faq.js">
+    <link rel="stylesheet" href="css/forestsJQuery.css">
 </head>
 <body>
-<style>
-    .invisible{
-        display: none;
-    }
-</style>
 
-<h1>Facts about 10 national Parks</h1>
-<button>Show or Hide the Facts!</button>
+<div class="bodyBox">
+    <div class="h1Facts">
+        <h1>Facts about 10 national Parks</h1>
+        <br>
+    </div>
+
+
+<div class="dlBox">
+    <button>Show or Hide the Facts!</button>
 <dl>
-    <dt><h4>How many National Parks are there?</h4></dt>
-    <dd>here are <dfn>58 national parks</dfn> In the united states</dd>
+    <dt><h3>How many National Parks are there?</h3></dt>
+    <dd>
+        <span class="textColor">There are <dfn>60 national parks</dfn> In the United States</span>
+        <img src="images/NationalParks.jpg" alt="Image of the United Stats National Parks">
+    </dd>
 
-    <dt><h4>Yellowstone:</h4><dt></dt>
-    <dd>Yellowstone was the first created national park, signed in the year <dfn>1872</dfn> by President Ulysses S. Grant</dd>
 
-    <dt><h4>Acadia:</h4></dt>
-    <dd><dfn>Acadia is the oldest park</dfn>east of the Mississippi River and the first instance where the land was donated to the federal government.</dd>
+    <dt><h3>Yellowstone:</h3><dt></dt>
+    <dd><span class="textColor">Yellowstone was the first created national park, signed in the year <dfn>1872</dfn> by President Ulysses S. Grant</span></dd>
 
-    <dt><h4>Arches:</h4></dt>
-    <dd>There are more than <dfn>2,000 documented arches</dfn> in the national park, some spanning up to 300 feet.</dd>
+    <dt><h3>Acadia:</h3></dt>
+    <dd><span class="textColor"><dfn>Acadia is the oldest park</dfn>east of the Mississippi River and the first instance where the land was donated to the federal government.</span></dd>
 
-    <dt><h4>Badlands:</h4></dt>
-    <dd>The Badlands are home to the <dfn>largest known cluster</dfn> of late Eocene and Oligocene mammal fossils.</dd>
+    <dt><h3>Arches:</h3></dt>
+    <dd><span class="textColor">There are more than <dfn>2,000 documented arches</dfn> in the national park, some spanning up to 300 feet.</span></dd>
 
-    <dt><h4>Big Bend National Park:</h4></dt>
-    <dd>Historically, people traveled to the Hot Springs Historic District in Big Bend to heal their ailments. Today, visitors can soak in the <dfn>105-degree</dfn> water that gushes from the old foundation of a bathhouse.</dd>
+    <dt><h3>Badlands:</h3></dt>
+    <dd><span class="textColor">The Badlands are home to the <dfn>largest known cluster</dfn> of late Eocene and Oligocene mammal fossils.</span></dd>
 
-    <dt><h4>Biscayne National Park</h4></dt>
-    <dd><dfn>Six shipwrecks</dfn> over nearly a century have been mapped on Bicayne National Park's Maritime Heritage Trail.</dd>
+    <dt><h3>Big Bend National Park:</h3></dt>
+    <dd><span class="textColor">Historically, people traveled to the Hot Springs Historic District in Big Bend to heal their ailments. Today, visitors can soak in the <dfn>105-degree</dfn> water that gushes from the old foundation of a bathhouse.</span></dd>
 
-    <dt><h4>Black Canyon of the Gunnison National Park:</h4></dt>
-    <dd>Sculpted over <dfn>two million years</dfn> with the help of the Gunnison River and forces of weather, the Black Canyon is a staggering <dfn>48 miles long.</dfn></dd>
+    <dt><h3>Biscayne National Park</h3></dt>
+    <dd><span class="textColor"><dfn>Six shipwrecks</dfn> over nearly a century have been mapped on Bicayne National Park's Maritime Heritage Trail.</span></dd>
 
-    <dt><h4>Bryce Canyon National Park:</h4></dt>
-    <dd>Bryce Canyon has the <dfn>largest collection</dfn> of hoodoos–odd-shaped pillars of rock–in the world.</dd>
+    <dt><h3>Black Canyon of the Gunnison National Park:</h3></dt>
+    <dd><span class="textColor">Sculpted over <dfn>two million years</dfn> with the help of the Gunnison River and forces of weather, the Black Canyon is a staggering <dfn>48 miles long.</dfn></span></dd>
 
-    <dt><h4>Canyonlands National Park:</h4></dt>
-    <dd><dfn>Horseshoe Canyon</dfn> contains some of the most significant rock art in North America, including the intricate life-sized figures of the Great Gallery.</dd>
+    <dt><h3>Bryce Canyon National Park:</h3></dt>
+    <dd><span class="textColor">Bryce Canyon has the <dfn>largest collection</dfn> of hoodoos–odd-shaped pillars of rock–in the world.</span></dd>
 
-    <dt><h4>Capitol Reef National Park:</h4></dt>
-    <dd>The rocks in Capitol Reef National Park are up to <dfn>270 million years old.</dfn></dd>
+    <dt><h3>Canyonlands National Park:</h3></dt>
+    <dd><span class="textColor"><dfn>Horseshoe Canyon</dfn> contains some of the most significant rock art in North America, including the intricate life-sized figures of the Great Gallery.</span></dd>
 
-    <dt><h4>Carlsbad Caverns National Park</h4></dt>
-    <dd>More than <dfn>119 caves</dfn> are hidden beneath the surface of the Chihuahuan Desert.</dd>
+    <dt><h3>Capitol Reef National Park:</h3></dt>
+    <dd><span class="textColor">The rocks in Capitol Reef National Park are up to <dfn>270 million years old.</dfn></span></dd>
+
+    <dt><h3>Carlsbad Caverns National Park</h3></dt>
+    <dd><span class="textColor">More than <dfn>119 caves</dfn> are hidden beneath the surface of the Chihuahuan Desert.</span></dd>
 </dl>
+</div>
+</div>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
-<script>
-
-    $(document).ready(function () {
-    	$("button").click(function () {
-		    $("dd").toggleClass("invisible");
-	    });
-
-    });
+<script src="js/jquery_faq.js"></script>
 
 
-</script>
+<!--<script>-->
+
+    <!--$(document).ready(function () {-->
+    	<!--$("button").click(function () {-->
+		    <!--$("dd").toggleClass("invisible");-->
+	    <!--});-->
+
+    <!--});-->
+
+
+<!--</script>-->
 
 </body>
 </html>
