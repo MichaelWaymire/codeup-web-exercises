@@ -19,6 +19,10 @@ $("li").click(function () {
 	$(this).parent().children().first().css('color', 'blue');
 });
 
+$("#smokeyBear").click(function () {
+	onlyYou.play()
+})
+
 
 var konamieCode = {
 
