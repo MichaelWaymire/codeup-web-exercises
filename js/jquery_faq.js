@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$("#showHideFacts").click(function () {
-		$("dd").toggleClass("invisible");
+		$("dd").slideToggle("invisible");
 	});
 
 });

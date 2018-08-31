@@ -1,0 +1,13 @@
+img {
+	max-width: 100%;
+}
+
+#viewport_image {
+	padding: 2vmin;
+	background: white;
+}
+
+#viewport_image img {
+	max-height: 750px;
+	max-width: 500px   ;
+}
