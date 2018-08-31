@@ -2,24 +2,112 @@
 <html>
 <head>
     <title>Online Store</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 <body>
 
-<h1>My Tool Store</h1>
+<style>
+    :root{
+        --main-bg-color: #5c4a72;
+        --box-bg-color: #a3586d;
+        --box-text-color: #f4874b;
+        --btn-color: #f3b05a;
+    }
 
-<table id="products">
-    <thead>
-    <tr>
-        <th>Title</th>
-        <th>Quantity</th>
-        <th>Price</th>
-        <th>Categories</th>
-    </tr>
-    </thead>
-    <tbody id="insertProducts"></tbody>
-</table>
-<input type="button" value="Refresh Page" onClick="window.location.reload()">
+    body{
+        background-color: var(--main-bg-color);
+    }
 
+    .toolBoxColor{
+        background-color: var(--box-bg-color);
+        color: var(--box-text-color);
+        border-radius: 100% 100% 0 0;
+
+    }
+
+    .tableBoxColor{
+        background-color: var(--box-bg-color);
+        color: var(--box-text-color);
+
+    }
+
+    .bottomToolBox{
+        background-color: var(--box-bg-color);
+        color: var(--box-text-color);
+        border-radius: 0 0 100% 100%;
+        height: 50px;
+
+    }
+
+    .btnRefresh{
+        margin-top: 10px;
+        background-color: var(--btn-color);
+        border-radius: 25%;
+    }
+
+
+</style>
+
+<!--This box wraps the who page-->
+<div class="container">
+
+<!--Start Row here-->
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 mt-5 text-center toolBoxColor">
+            <h1>My Tool Store</h1>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <hr>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+
+
+        <!--first box acts like a buffer to push the middle box to the center-->
+        <div class="col-3"></div>
+        <div class="col-6 text-center tableBoxColor">
+
+            <table id="products">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Categories</th>
+                    <th>In Stock</th>
+                </tr>
+                </thead><tbody id="insertProducts"></tbody>
+            </table>
+        </div>
+        <!--Last box in this row does the same as the first box-->
+        <div class="col-3"></div>
+    </div>
+
+<br>
+
+
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 text-center bottomToolBox">
+
+            <input class="btnRefresh" type="button" value="Refresh Page" onClick="window.location.reload()">
+
+           <!--click this botton to make a text field populate-->
+            <!--<button onclick="textButton()">Try it</button>-->
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <script>
@@ -29,11 +117,13 @@
 		$.get("./data/inventory.json").done(function (data) {
 			var tr;
 			for (var i = 0; i < data.length; i++) {
+
 				tr = $('<tr>');
-				tr.append("<td>" + data[i].title + "</td>");
-				tr.append("<td>" + data[i].quantity + "</td>");
-				tr.append("<td>" + data[i].price + "</td>");
-				tr.append("<td>" + data[i].categories + "</td>");
+				tr.append("<td class='tableBox'>" + data[i].title + "</td>");
+				tr.append("<td class='tableBox'>" + data[i].quantity + "</td>");
+				tr.append("<td class='tableBox'>" + data[i].price + "</td>");
+				tr.append("<td class='tableBox'>" + data[i].categories + "</td>");
+				tr.append("<td class='tableBox'>" + data[i].inStock + "</td>");
                 $('table').append(tr);
 
                 console.log(data.title)
@@ -47,6 +137,15 @@
 		//             its contents and fields
 		//       HINT: You will want to target #insertProducts for your new HTML elements
 	})();
+
+
+	// click a button to make a text field pop.
+	// function textButton() {
+	// 	var x = document.createElement("INPUT");
+	// 	x.setAttribute("type", "text");
+	// 	x.setAttribute("value", "Hello World!");
+	// 	document.body.appendChild(x);
+	// }
 </script>
 
 </body>
