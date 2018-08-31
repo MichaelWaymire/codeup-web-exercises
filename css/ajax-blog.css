@@ -1,0 +1,81 @@
+:root{
+	--main-bg-color: #5c4a72;
+	--box-bg-color: #a3586d;
+	--box-text-color: #f4874b;
+	--hr-line-color: #f46a4e;
+	--btn-color: #f3b05a;
+}
+
+body{
+	background-color: var(--main-bg-color);
+}
+
+.toolBoxColor{
+	
+	padding-top: 30px;
+	height: 100px;
+	background-color: var(--box-bg-color);
+	color: var(--box-text-color);
+	border-radius: 100% 100% 0 0;
+	
+}
+
+.tableBoxColor{
+	background-color: var(--box-bg-color);
+	color: var(--box-text-color);
+	
+}
+
+.bottomToolBox{
+	background-color: var(--box-bg-color);
+	color: var(--box-text-color);
+	border-radius: 0 0 100% 100%;
+	height: 50px;
+	
+}
+
+.btnRefresh{
+	margin-top: 10px;
+	background-color: var(--btn-color);
+	border-radius: 25%;
+}
+.titleBox{
+	
+	font-weight: bold;
+	font-size: 25px;
+	color: var(--btn-color)
+}
+.hrTitle{
+	height: 30px;
+	margin: 0;
+	border-style: solid;
+	border-color: var(--hr-line-color);;
+	border-width: 3px 0 0 0;
+	border-radius: 20px;
+	
+}
+
+.dateText{
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.funCupCake{
+	float: left;
+	height: 65px;
+	width: 65px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 100%;
+	
+}
+
+.funCupCakeBox{
+	padding-right: 60px;
+}
+
+.loremIpsonSweets{
+	float: right;
+	padding-right: 75px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajax Blog</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ajax-blog.css">
+</head>
+<body>
+
+<!--This box wraps the who page-->
+<div class="container">
+
+    <!--Start Row here-->
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 mt-5 text-center toolBoxColor">
+
+            <div class="funCupCakeBox">
+                <img class="funCupCake" src="images/funCupCake.jpg">
+            </div>
+
+            <div class="loremIpsonSweets">
+                <h1>Lorem Ipsom Sweets</h1>
+            </div>
+
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <hr>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+
+
+        <!--first box acts like a buffer to push the middle box to the center-->
+        <div class="col-3"></div>
+        <div class="col-6 text-center tableBoxColor">
+            <div id="posts">
+                <div id="spacerbr">
+
+                </div>
+
+            </div>
+            <!--<table id="products">-->
+                <!--<thead>-->
+                <!--<tr>-->
+                    <!--<th>Title</th>-->
+                    <!--<td>-->
+
+                    <!--</td>-->
+                    <!--<th>Blog Post</th>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<th>Categories</th>-->
+                    <!--<th>Date</th>-->
+                <!--</tr>-->
+                <!--</thead><tbody id="insertProducts"></tbody>-->
+            <!--</table>-->
+        </div>
+        <!--Last box in this row does the same as the first box-->
+        <div class="col-3"></div>
+    </div>
+
+    <br>
+
+
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 text-center bottomToolBox">
+
+            <input class="btnRefresh" type="button" value="Refresh Page" onClick="window.location.reload()">
+
+            <!--click this botton to make a text field populate-->
+            <!--<button onclick="textButton()">Try it</button>-->
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+
+
+	(function() {
+		"use strict";
+		$.get("./data/blog.json").done(function (data) {
+			var br;
+			var div;
+			for (var i = 0; i < data.length; i++) {
+                div = $('<div>');
+
+				div.append("<div class='text-left mb-2 titleBox'>" + data[i].title + '<div class="float-right text-right dateText">'+ data[i].date + '</div>' + '</div>' + '<hr class="hrTitle">');
+				div.append("<div class='mb-3'>" + data[i].content + "</div>");
+				div.append('<div class="text-left mb-5">'  + '<div class="text-right float-right">' +"Category: " + data[i].categories  + '</div>' + '</div>');
+
+				$('#posts').append(div);
+
+				console.log(data.title)
+			}
+		})
+
+
+
+	})();
+
+</script>
+
+</body>
+</html>
