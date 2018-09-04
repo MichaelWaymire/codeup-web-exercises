@@ -46,11 +46,23 @@ body{
 	color: var(--btn-color)
 }
 .hrTitle{
-	height: 30px;
+	height: 20px;
 	margin: 0;
+	padding: 0;
 	border-style: solid;
 	border-color: var(--hr-line-color);;
 	border-width: 3px 0 0 0;
+	border-radius: 10px;
+	
+}
+
+.hrTitleTop{
+	height: 40px;
+	margin: 0 0 1em 0 ;
+	padding: 0;
+	border-style: solid;
+	border-color: var(--hr-line-color);;
+	border-width: 0 0 3px 0;
 	border-radius: 20px;
 	
 }
