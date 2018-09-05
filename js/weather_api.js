@@ -13,7 +13,7 @@ $(function() {
 	var weatherData = function(temp_max, temp_min, imgName,
 	                           weatherName, weatherDesc, humidity,
 	                           windSpeed, pressure) {
-		var weatherCard = "<article class='card, col-4, ml-5 text-center'>";
+		var weatherCard = "<article class='card, col-4, weatherBoxes'>";
 
 		var highlowtemp = "";
 		temp_max = parseFloat(temp_max) * 9/5 - 459.67;

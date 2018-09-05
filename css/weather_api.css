@@ -1,4 +1,10 @@
 .weather{
 	background-color: lightgray;
-	width: 150px;
+	/*margin-left: 7em;*/
+}
+
+
+.weatherBoxes{
+	text-align: center;
+	/*margin: 10em;*/
 }
