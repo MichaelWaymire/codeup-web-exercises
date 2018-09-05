@@ -13,7 +13,7 @@ $(function() {
 	var weatherData = function(temp_max, temp_min, imgName,
 	                           weatherName, weatherDesc, humidity,
 	                           windSpeed, pressure) {
-		var weatherCard = "<article class='card, col-4, weatherBoxes'>";
+		var weatherCard = "<div class='card, col-4, weatherBoxes'>";
 
 		var highlowtemp = "";
 		temp_max = parseFloat(temp_max) * 9/5 - 459.67;
@@ -114,4 +114,7 @@ $(function() {
 		$("#localWeather").append(weatherDataCard3);
 
 	});
+
+
 });
+

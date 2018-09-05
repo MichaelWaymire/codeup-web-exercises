@@ -1,10 +1,20 @@
+
+.bodyColor{
+	background-color: #00aba9;
+}
+
 .weather{
 	background-color: lightgray;
 	/*margin-left: 7em;*/
 }
 
-
 .weatherBoxes{
 	text-align: center;
-	/*margin: 10em;*/
+	width: 33.334%;
 }
+
+#map-canvas {
+	width: 90%;
+	height: 481px;
+}
+

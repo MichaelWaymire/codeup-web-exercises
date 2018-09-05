@@ -5,19 +5,39 @@
     <title>Weather Map</title>
     <link rel="stylesheet" href="css/weather_api.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style type="text/css">
+
+    </style>
 </head>
 <body>
 
-<main class="container">
+<main class="container bodyColor">
 
     <div class="card text-center">
 
         <h1>Weather Application</h1>
+    </div>
 
         <h3>San Anotnio</h3>
-        <section class="row" id="localWeather"></section>
 
+        <div class="row" id="localWeather"></div>
 
+        <br>
+        <br>
+
+    <label>
+        <!--Not working yet will come back to fix-->
+    <button>Location</button>
+        <input type="text">
+    </label>
+
+    <div class="card">
+        <!-- div to hold map -->
+        <div id="map-canvas"></div>
+
+        <!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=API KEY GOES HERE"></script>
 
     </div>
 
@@ -27,5 +47,26 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="js/weather_api.js"></script>
+
+<script type="text/javascript">
+	(function() {
+		"use strict";
+
+		// Set our map options
+		var mapOptions = {
+			// Set the zoom level
+			zoom: 19,
+
+			// This sets the center of the map at our location
+			center: {
+				lat:  29.426791,
+				lng: -98.489602
+			}
+		};
+
+		// Render the map
+		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+	})();
+</script>
 </body>
 </html>
