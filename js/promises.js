@@ -17,7 +17,7 @@ console.log(isSmallThenTen(1));
 
 
 function getLastCommit (){
-	return fetch('https://api.github.com/users/michaelwaymire/events',{headers:{'Authorization':'aa44610c8836c557f06c9f1a2376c4bca4a1d82'}})
+	return fetch('https://api.github.com/users/UserName/events',{headers:{'Authorization':'Token Code'}})
 		.then(response => response.json())
 		.then((users) => (users[0].created_at))
 		.catch(error => console.log(error))
